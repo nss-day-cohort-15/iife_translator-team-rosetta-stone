@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: red;
+}
+
+.lbl {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.textInput {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.radBut {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.outputDiv {
+  display: inline-block;
+  margin: 0 auto;
+}

@@ -4,22 +4,27 @@
   <title>Translator</title>
 </head>
 <body>
-  <label for="input" >Text to translate</label><br>
-  <textarea id="input"  class="textInput">
-  </textarea><br>
+  <div class="wrapper">
 
-  <label for="german">German</label>
-  <input type="radio" name="language" id="german"><br>
-  <label for="french">French</label>
-  <input type="radio" name="language" id="french"><br>
-  <label for="spanish">Spanish</label>
-  <input type="radio" name="language" id="spanish"><br>
+    <label for="input" class="lbl">Text to translate</label><br>
+    <textarea id="input"  class="textInput">
+    </textarea><br>
 
-  <button id="translateButton">Translate!</button>
+    <label for="german" class="lbl">German</label>
+    <input type="radio" name="language" id="german" class="radBut"><br>
 
-  <div id="output">
+    <label for="french" class="lbl">French</label>
+    <input type="radio" name="language" id="french" class="radBut"><br>
+
+    <label for="spanish" class="lbl">Spanish</label>
+    <input type="radio" name="language" id="spanish" class="radBut"><br>
+
+    <button id="translateButton" class="tButton">Translate!</button>
+
+    <div id="output" class="outputDiv">
+    </div>
   </div>
-
+  <style src="style.css"></style>
   <script src="germanJs.js"></script>
   <script src="frenchJs.js"></script>
   <script src="spanishJs.js"></script>
