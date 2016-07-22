@@ -10,7 +10,7 @@ var input = document.getElementById("input").value;
   }
 
   else if (document.getElementById('french').checked === true) {
-    translator.translateToFrench(input);
+   document.getElementById('output').innerText =  translator.translateToFrench(input);
 
   }
 
