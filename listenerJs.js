@@ -5,12 +5,12 @@ document.getElementById("translateButton").addEventListener("click", function(){
 var input = document.getElementById("input").value;
 
   if (document.getElementById('german').checked === true) {
-    translator.translateToGerman(input);
+    document.getElementById('output').innerText = translator.translateToGerman(input);
 
   }
 
   else if (document.getElementById('french').checked === true) {
-   document.getElementById('output').innerText =  translator.translateToFrench(input);
+   document.getElementById('output').innerText = translator.translateToFrench(input);
 
   }
 

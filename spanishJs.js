@@ -15,11 +15,11 @@ var translator = (function() {  //iife
     year: "año"
   }
 
-  return { 
-    translateToSpanish: function(inputPH) { 
+  return {
+    translateToSpanish: function(inputPH) {
 // "translator" iife now has a key "translateToSpanish".  Its value is a function
-// that accepts the argument "inputPH".  
-      var strArray = inputPH.split(" ");        //Places the input from text box into an array       
+// that accepts the argument "inputPH".
+      var strArray = inputPH.split(" ");        //Places the input from text box into an array
       for (i = 0; i < strArray.length; i++) {   //iterate over each item in the new array
           for (word in spanishLexicon) {        //iterate over each word in the spanishLexicon array
             if (strArray[i] === word) {         //test to see if the two are equal
@@ -31,14 +31,14 @@ var translator = (function() {  //iife
       return strArray.join(" ");     //join items in array "strArray" into a string
     },
 
-    translateToGerman: function(inputPH) {
-      console.log(inputPH + "german");  //test if german radio button works.
+    // translateToGerman: function(inputPH) {
+    //   console.log(inputPH + "german");  //test if german radio button works.
+
+    // },
+    // translateToFrench: function(inputPH) {
+    //   console.log(inputPH + "french");  //test if french radio button works.
 
     },
-    translateToFrench: function(inputPH) {
-      console.log(inputPH + "french");  //test if french radio button works.
-
-    },    
   };
 })();
 
